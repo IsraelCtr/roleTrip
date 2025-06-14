@@ -1,10 +1,10 @@
 import express from 'express';
-import conectiondatabase from './config/dbconect.js'; // Importando a função de conexão com o banco de dados
-import Routes from './routes/index.js'; // Importando as rotas
-import cors from 'cors'; // Importando o middleware CORS
-//import ManipuladorDeErros from './middleware/manipuladoDeErros.js';
+import conectiondatabase from './config/dbconect.js'; 
+import Routes from './routes/index.js'; 
+import cors from 'cors'; 
 
-const conection = await conectiondatabase(); // Conectando ao banco de dados MongoDB
+
+const conection = await conectiondatabase(); 
 
 conection.on('error', (err) => {
     console.error('Erro de conexão:', err);
