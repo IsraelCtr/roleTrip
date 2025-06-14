@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/role/RoleTrip/src/routes/index.js"
+            "dest": "/"
         }
     ]
 }
