@@ -2,13 +2,13 @@
     "version": 2,
     "builds": [
         {
-            "src": "package.json",
+            "src": "./src/server.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "/role/RoleTrip/src/routes/index.js"
         }
     ]
