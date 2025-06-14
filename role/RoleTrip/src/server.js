@@ -23,7 +23,7 @@ app.get('/api/test', (req, res) => {
 });
 
 const hostname = 'LOCALHOST';
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 
