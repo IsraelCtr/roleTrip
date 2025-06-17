@@ -22,12 +22,12 @@ app.get('/api/test', (req, res) => {
   });
 });
 
-const hostname = 'roleTrip';
+
 const port = process.env.PORT || 3000;
 
 
 
 
 app.listen(port, hostname, () => {
-    console.log(`Server runing in http://${hostname}:${port}/`);
+    console.log(`Server runing in ${port}/`);
 });
