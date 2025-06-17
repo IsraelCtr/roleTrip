@@ -22,7 +22,7 @@ app.get('/api/test', (req, res) => {
   });
 });
 
-const hostname = 'LOCALHOST';
+const hostname = 'roleTrip';
 const port = process.env.PORT || 3000;
 
 
